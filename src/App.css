@@ -1,3 +1,15 @@
+body {
+  background: #f0e9e9;
+}
+
+h1 {
+  margin: 50px;
+}
+
+a {
+  color: #aa7070;
+}
+
 footer {
   font-size: 14px;
   margin: 30px 0;

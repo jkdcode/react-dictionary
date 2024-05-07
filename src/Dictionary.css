@@ -1,0 +1,24 @@
+section {
+  background: #fff;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 10%);
+}
+
+form {
+  padding: 15px 15px 5px 15px;
+}
+
+input {
+  padding: 10px 8px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.hint {
+  padding: 0 15px;
+  font-style: italic;
+  font-size: 14px;
+}
