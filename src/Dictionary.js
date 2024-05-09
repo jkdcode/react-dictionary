@@ -46,7 +46,7 @@ export default function Dictionary(props) {
             />
           </form>
           <div className="hint">
-            Suggested words: alien, blackbird, city, dragon, elixir...
+            Suggested words: alien, blackbird, cephalopod, dragon, elixir...
           </div>
         </section>
         <Results results={results} searched={searched} />
