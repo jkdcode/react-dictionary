@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import Pictures from "./Pictures";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -8,6 +9,7 @@ export default function Dictionary(props) {
   const [results, setResults] = useState(null);
   const [searched, setSearched] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [pictures, setPictures] = useState(null);
 
   function handleDictionaryResponse(response) {
     setResults(response.data);
@@ -15,7 +17,7 @@ export default function Dictionary(props) {
   }
 
   function handleImagesResponse(response) {
-    console.log(response);
+    setPictures(response.data.photos);
   }
 
   function search() {
@@ -57,6 +59,7 @@ export default function Dictionary(props) {
           </div>
         </section>
         <Results results={results} searched={searched} />
+        <Pictures pictures={pictures} />
       </div>
     );
   } else {
