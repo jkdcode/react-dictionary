@@ -4,7 +4,9 @@ body {
 }
 
 h1 {
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: "Coming Soon", cursive;
   color: #294b29;
 }
 
