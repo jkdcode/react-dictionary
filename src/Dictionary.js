@@ -9,15 +9,22 @@ export default function Dictionary(props) {
   const [searched, setSearched] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResults(response.data);
     setSearched(true);
+  }
+
+  function handleImagesResponse(response) {
+    console.log(response);
   }
 
   function search() {
     const apiKey = `7a1b7bb3a54afd03ao8ta3f7b40acb43`;
     const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
+
+    const imagesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`;
+    axios.get(imagesApiUrl).then(handleImagesResponse);
   }
 
   function handleSubmit(event) {
