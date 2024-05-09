@@ -1,0 +1,9 @@
+.part-of-speech {
+  font-size: 20px;
+}
+
+.example {
+  font-style: italic;
+  color: rgba(33, 37, 41, 0.8);
+  margin-top: 5px;
+}

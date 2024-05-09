@@ -1,0 +1,17 @@
+.synonym-title {
+  font-weight: bold;
+}
+
+.synonyms {
+  margin: 0;
+  padding: 0;
+}
+
+.synonyms li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.synonyms ul {
+  padding: 0;
+}

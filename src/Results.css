@@ -1,3 +1,14 @@
 .no-result {
   font-style: italic;
 }
+
+.word {
+  font-size: 45px;
+  font-family: "DM Serif Display", serif;
+  color: #294b29;
+}
+
+.phonetics {
+  font-size: 20px;
+  color: rgba(33, 37, 41, 0.75);
+}

@@ -1,13 +1,15 @@
 body {
-  background: #f0e9e9;
+  background: #dbe7c9;
+  font-family: "Ubuntu Sans", sans-serif;
 }
 
 h1 {
   margin: 50px;
+  color: #294b29;
 }
 
 a {
-  color: #aa7070;
+  color: #50623a;
 }
 
 footer {

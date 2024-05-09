@@ -4,12 +4,14 @@ export default function Examples(props) {
   const { examples } = props;
 
   if (examples) {
+    // Function to capitalize the first letter of a string
+    const capitalizeFirstLetter = (str) => {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    };
+
     return (
       <div>
-        <div>
-          <strong>Example: </strong>
-          <em>{examples}</em>
-        </div>
+        <div>"{capitalizeFirstLetter(examples)}"</div>
       </div>
     );
   } else {
